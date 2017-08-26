@@ -1,0 +1,27 @@
+*all programs are full prove (with non-trevial lemmas and calcs) and create an execute file
+
+Quick sort :-
+*the algorithem taken from weki.
+
+has 2 stages . 1) partition  2) recursive call
+
+1) in partition we introduce new local var "j" = lo   that will be used as accumlator in while loop
+2) the next step is loop :-
+	- guard and ensures the guard and invariant are asserted at each entrence to the loop
+	-invariant loop contains condition that will ensures that at every step j all index < pivot are less or equal to a[hi] and all x between pivot to j are larger than a[hi]
+	 -for now these invariant will ensure that the return value of pivot will ensure the post cond for partition method  forall x,y :: 0 <=x <= pivot <= y < a.Length --> a[x] <= pivot <= a[y].
+these postcond is not enouph to prove quickSort method we had to prove that the index that we had calculate will not change
+and the x,y :: x <= pivot <= y < a.Length will stay as a[x] <= a[pivot] <= a[y] and for that we add three additional invariant that ensures the new three "identical" poscond.
+
+
+for the quickSort mehod
+	1) we requires and ensures the new 3 conditions
+	2) and for at each recursive call we ensure that the given indexes interval are sorted
+	3) and the qSort postCond ensures by the ensures the sort2 of quickSort method (trevial- they has the same conditions).
+
+*more detailed refignment steps in the code
+*in this program there are no nessecery lemmas the condition of the loop and the recursive call postCond ensure postCondition
+*in the other two programs all lemmas and calc's are proven. 
+
+thanks
+ rami & majd

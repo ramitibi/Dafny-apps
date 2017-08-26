@@ -1,0 +1,23 @@
+*all programs are full prove (with non-trevial lemmas and calcs) and create an execute file
+
+matrix-multiplication
+
+it's the longest prove with a lot of non-trevial lemma and calc 
+
+we had three loop at each one we ensures the invariant the gaurd the decreases (following assighment).
+
+the first loop we ensures that the row i in m3 had the right value
+the second loop ensures that for every colmun m3 and a row it had the right value
+the third loop ensures that the calc of m3[i,j] it will have the right value.
+
+for each loop we had to prove lemma's and calc
+we sperated the loops and the assighment to find all violations somehow dafny will convence without any needed non-trevial lemmas.
+
+the program just had loop work (we done it all semester) and all the work was to choose the right predicates.
+
+-in this program there are non-trevial calcs.
+-the program compile and create binary file to execute.
+*in frontier there is non-trevial lemma and in quickSort there is no need for it as show in the semi-documnation.
+
+thanks
+ rami & majd

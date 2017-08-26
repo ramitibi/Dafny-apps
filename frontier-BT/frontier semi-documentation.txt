@@ -1,0 +1,18 @@
+*all programs are full prove (with non-trevial lemmas and calcs) and create an execute file
+
+frontier
+
+we choose to solve it like ComputeSumTree that we saw in the class
+	1) introduce local var that we used to concat the leafes to it (in the class we n to sum the leafes)
+	2) iteration -- it contains the guard, invariant  and decreases expresstion.
+	3) in alternation in the loop , at each case we had prove that the invariant and decreases will hold 
+	4) at the end of the loop we got sequence "temp" that contain all the leaves.
+	5) we had to prove the Frontier(tree) == temp so we can add temp to io.omega directly (a way to bypass io.Output)
+
+-in this program there are non-trevial calcs.
+-the program compile and create binary file to execute.
+-in the multipy matrix there is a lot of proven non-trevial lemma and calc's
+-in the quick sort there is no need for non-trevial lemma to prove it  as show in its documentation
+
+thanks
+ rami & majd
